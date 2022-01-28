@@ -54,7 +54,7 @@ void dump_table(unsigned char *table, const size_t table_size, const size_t entr
         if ((l % entries_per_line) == 0) {
             printf("\n    ");
         }
-        printf("%.2X", table[l]);
+        printf("0x%.2X", table[l]);
         if ((l + 1) != table_size) {
             printf(", ");
         } else {
